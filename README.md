@@ -1,4 +1,4 @@
-## Docker commands メモ
+# Docker commands メモ
 
 ## Dockerfileのドキュメント
 
@@ -21,6 +21,12 @@ docker compose build --no-cache --pull
 ```
 
 `--pull` はベースイメージの新しい版を取得してからビルドします。`--no-cache` と併用すると、キャッシュを使わず最新のベースイメージを使ったビルドを試みます。
+
+- Compose ファイルの設定を検証し、展開後の設定を表示
+
+```bash
+docker compose config
+```
 
 - サービスの開始（backgroundで）
 
